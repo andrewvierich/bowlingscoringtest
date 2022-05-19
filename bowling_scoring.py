@@ -1,7 +1,6 @@
 import math
 from time import perf_counter
 
-
 def convert_strings(data_dict):
     for id, frames in data_dict.items():
         i = 0
@@ -96,7 +95,6 @@ def parse_data(content):
                 list_scores.append([throws[i] , throws[i+1]])
             i+=2
     return list_dict       
-
 
 def calc_mean(list):
     return sum(list) / len(list)

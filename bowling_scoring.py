@@ -8,7 +8,7 @@ def convert_strings(data_dict):
         while i <= len(frames)-1:
             #convert all string values to ints
             if frames[i][0] == '-':
-                frames[i][0] = 0
+               frames[i][0] = 0
             if frames[i][1] == '-':
                 frames[i][1] = 0
             if frames[9][2] == '-':
@@ -132,16 +132,9 @@ def main():
     print ("Standard Deviation:", standard_deviation)
 
 if __name__ == "__main__":
+    #Adds a timer to see how long it takes for main function to process.
     start_time = perf_counter()
     main()
     end_time = perf_counter()
     rounded_duration = (round(start_time-end_time))
-    print (f'It took {end_time- start_time :0.2f} second(s) to complete.')
-
-
-
-
-
-
-
-
+    print (f'It took {end_time- start_time :0.2f} second(s) to complete.'

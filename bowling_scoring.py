@@ -137,4 +137,4 @@ if __name__ == "__main__":
     main()
     end_time = perf_counter()
     rounded_duration = (round(start_time-end_time))
-    print (f'It took {end_time- start_time :0.2f} second(s) to complete.'
+    print (f'It took {end_time- start_time :0.2f} second(s) to complete.')
